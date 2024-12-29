@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tech Fundamentals Vocabulary</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid navy;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: darkblue;
+        }
+
+        .carouselh3 {
+            color: darkblue;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: navy;
+            border: 3px solid blue;
+        }
+
+        .oomph {
+            font-size: larger;
+            font-weight: bold;
+            color: red;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+    </style>
+    <link rel="stylesheet" href="112styles.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h4 class="page-section-title">Tech Fundamentals</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="digitools.html" >
+                        <img class="layout-image imgUnit" src="images\digitools.png" alt="Digital Tools">
+                    </a>
+
+                    <h5 class="layout-title pt-2">Tooling</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="computerinnards.html" data-highres="images\inacomputer.png">
+                        <img class="layout-image imgUnit" src="images\inacomputer.png" alt="Computer Innards">
+                    </a>
+
+                    <h5 class="layout-title pt-2">Components</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="numbers.html" data-highres="images\numbers.png">
+                        <img class="layout-image imgUnit" src="images\numbers.png" alt="Numbers">
+                    </a>
+
+                    <h5 class="layout-title pt-2">Numbers</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a data-highres="images/internet.png" href="internet.html">
+                        <img class="layout-image imgUnit" src="images/internet.png" alt="Internet">
+                    </a>
+                    <h5 class="layout-title pt-2">Internet</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="digitalsecurity.html" data-highres="images\cyberthreat.png">
+                        <img class="layout-image imgUnit" src="images\cyberthreat.png" alt="Cybersecurity">
+                    </a>
+                    <h5 class="layout-title pt-2">Cybersecurity</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="programming.html" data-highres="images\codingintroplus.png">
+                        <img class="layout-image imgUnit" src="images\codingintroplus.png" alt="Coding">
+                    </a>
+                    <h5 class="layout-title pt-2">Programming</h5>
+                </section>
+
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="api.html" data-highres="images\os.png">
+                        <img class="layout-image imgUnit" src="images\os.png" alt="APIs">
+                    </a>
+                    <h5 class="layout-title pt-2">APIs</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a href="databases.html" data-highres="images/databases.png">
+                        <img class="layout-image imgUnit" src="images/databases.png" alt="Databases">
+                    </a>
+                    <h5 class="layout-title pt-2">Databases</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a  data-highres="images/copyright.png" href="laws.html">
+                        <img class="layout-image imgUnit" src="images/copyright.png" alt="Laws">
+                    </a>
+                    <h5 class="layout-title pt-2">Laws</h5>
+                </section>
+            </div>
+
+        </section>
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <article id="unit1-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit1" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Variable</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Named location in computer memory. </p>
+                                <p class="carouseldef">Stores data for use in application. </p>
+                                <p class="carouseldef">Java is statically typed, meaning variables must be declared,
+                                    with a <i>data type</i>, before they are used.</p>
+                                <p class="carouseldef">&nbsp;&nbsp;int counter;</p>
+                                <p class="carouseldef">counter is a variable, able to store the <i>data type</i>
+                                    referenced as <i>int</i>.</p>
+                                <p class="carouseldef">&nbsp;&nbsp;boolean isValid;</p>
+                                <p class="carouseldef">isValid is a variable, able to store the <i>data type</i>
+                                    referenced as <i>boolean</i>.</p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Data Type</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Descriptive term, indicating what can be done with data, how much
+                                    space required to store it. For instance <i>int</i> and <i>double</i> variables can
+                                    be divided, added, multiplied. The <i>boolean</i> data type describes
+                                    variables that can store one of two values, true or false. Basic data types in AP
+                                    Computer Science curriculum (A) are int, boolean and double.</p>
+                                <p class="carouseldef">The <i>int</i> data type - 4 bytes, whole numbers from
+                                    -2,147,483,648 to 2,147,483,647.</p>
+                                <p class="carouseldef">The double data type - 8 bytes, fractional numbers, 15 decimal
+                                    digits.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Primitive Data Type</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A data type of known storage requirement, like int, boolean,
+                                    double.</p>
+                                <p class="carouseldef">The <i>int</i> data type takes up 4 bytes of storage and
+                                    represents whole numbers from -2,147,483,648 to 2,147,483,647.</p>
+                                <p class="carouseldef">The <i>double</i> data type takes up 8 bytes of storage and
+                                    represents fractional numbers. Sufficient for storing 15 decimal digits.</p>
+                                <p class="carouseldef">The <i>boolean</i> data type only requires 1 bit but in practice
+                                    may be take up a byte or nybble.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Reference</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Think of a reference as the starting memory location for storing
+                                    data of an unpredicted size</p>
+                                <p class="carouseldef">A non-null reference requires an allocation of memory, involving
+                                    some initialization, or the use of the new operator.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">boolean</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive Data type having only values of either true or false.
+                                    Named for Boolean logic, a branch of mathematics developed by George Boole, an
+                                    Anglo-Irish mathematician.</p>
+                                <p class="carouseldef">A boolean variable can be used to store a value of true or false,
+                                    this making the <i>boolean</i> data type useful for conditionals.</p>
+                                <p class="carouseldef">
+                                    <br> boolean isSenior = age > 65;
+
+                                </p>
+                                <p class="carouseldef">If <i>age</i> is 67, then <i>isValid</i> is true. If <i>age</i>
+                                    is 45 then <i>isValid</i> is false.</p>
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">int</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive numeric data Data type. </p>
+                                <p class="carouseldef"> Occupies 32 bits, or 4 bytes, and can store numbers from -2
+                                    <sup>31</sup> to 2<sup>31</sup> - 1. Whole numbers only.
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">double</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive numeric data Data type. </p>
+                                <p class="carouseldef">Occupies 64 bits and can store numbers from -2<sup>63</sup> to
+                                    2<sup>64</sup> - 1. Fractional parts included.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Parameter</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Data that is passed to a method. </p>
+                                <p class="carouseldef"> Formal parameters are described in method defintion, actual
+                                    parameters are passed to method in calling code.
+                                    <br> <i>rate</i> and <i>balance</i> are formal parameters,<br><br> public double
+                                    interestCalculated(double rate, double balance) { ...<br>&nbsp;&nbsp;&nbsp;
+                                    }<br><br>
+                                    <br> ... actual parameters are in the call,<br><br> double interest =
+                                    interestCalculated(0.03, 12000);
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Operators</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A symbol used to perform an operation,</p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>addition</td>
+                                        <td>+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>subtraction</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>multiplication</td>
+                                        <td>*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>division</td>
+                                        <td>/</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>modulo</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>equality</td>
+                                        <td>==</td>
+                                    </tr>
+                                    <tr>
+                                        <td>assignment</td>
+                                        <td>=</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Constant</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A variable, value of which cannot be changed after
+                                    initialization. Commonly represented in uppercase. Indicated with keyword final.
+                                </p>
+                                <p class="carouseldef"><br>final int GOAL_HEIGHT = 8;</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Class</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A template for creating an object or instance.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Object</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A data model created from a class.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Casting</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A way to 'temporarily convert' or represent data as another type.
+                                    For example,
+                                    <br> double height = 34.5;<br> int val = (int) height; // This is a narrowing
+                                    conversion<br> int width = 5;<br> double side = (double)width; // This is a widening
+                                    conversion<br>
+                                </p>
+                                <p>Note, when an int is typecast to a double, information is not lost. However, when a
+                                    double is typecast to an int, the fractional part is truncated.</p>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+
+    <!----------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------------------------->
+
+
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

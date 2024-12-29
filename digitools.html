@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Digital Tools</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid #373A36;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .infoimg {
+            width: 50px;
+            height:50px;
+        }
+
+        .quoteimg {
+            width:100px;
+            height:100px;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: #373A36;
+        }
+
+        .carouselh3 {
+            color: #373A36;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: #373A36;
+            border: 3px solid #373A36;
+        }
+
+        .oomph {
+            font-size: large;
+            font-weight: bold;
+            color: #373A36;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+
+        .tablequestion {
+            display: table;
+            border: 5px solid #373A36;
+            padding: 10px;
+            border-collapse: separate;
+            justify-content: left;
+            text-align: left;
+        }
+
+        table.question-table tbody td {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        table.question-table tbody th {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        .infocell {
+            background-color: powderblue;
+        }
+
+        .material-icons i {
+            margin-right: -10px;
+            padding-right: -20px;
+        }
+
+        i.custom {
+            font-size: 2em;
+            color: green;
+        }
+
+        .oomph {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .popupimg {
+            width: 90%;
+            height: auto;
+        }
+
+        .buttonOomph {
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="112styles.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <a tabindex="0"  role="button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </a >
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">Digital Tools</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Vocab Verifier">
+
+                    </a>
+                    <h5 class="layout-title pt-2"><em>Digi-Tools</em></h5>
+                </section>
+
+
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
+                    </a>
+                    <h5 class="layout-title pt-2">#Tooling, Jobs</h5>
+                </section>
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vocabModalLabel1">Level Up With Tools & Terms</h5>
+                    <a tabindex="0"  role="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a >
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                        
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Managing Your Data
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">
+                                        stars</i>File, File Extension<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Folder<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Editor, Image Editor
+                                        <br>
+             
+                    
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                   You had better be organized in college. Most of your academic work is created and stored on a computer, and submitted digitally.
+
+                                    Don't forget, a <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="filepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="File" html="true">file </a > should be named to reflect it's content and stored in an appropriate 
+                                    <a tabindex="0"  role="button" type="button" data-placement="left" class="btn btn-info"
+                                        id="folderpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Folder" html="true">folder </a >. Make sure to keep a folder for each class and section that folder into weekly or other suitable sub-folders.
+                                    <p><a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="editorpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Editor" html="true">Editors </a > make it possible to create and modify file content.
+                                    and <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="imageeditorpopup" data-bs-toggle="popover"
+                                        data-bs-trigger="hover focus" title="Image Editor"
+                                        html="true">Image Editors </a > specifically handle image content.
+                                    </p>
+                                  
+                                 
+
+
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Saving Space
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">
+                                        stars</i>
+                                Compression<br>
+                                <i class="material-icons custom">
+                                    stars</i>Zipping Files<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                        <p>Data in files and folders takes up lots of space on disk, so files are typically compressed. There are 2 broad categories of compression - 
+                                            <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="lossypopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Lossy Compression"
+                                                    html="true">lossy </a >
+                                               and 
+                                          
+                                                <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                                    id="losslesspopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="Lossless Compression" html="true">
+                                                    lossless </a > compression, shown in certain files.
+                                                    <p>A project you have to upload may be composed of many files - in which case you should 
+                                                <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="zippopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Zip"
+                                                    html="true">
+                                                    Zip </a > your files into one file, and upload the zipped file - don't upload 50 different files, unless someone asks you to!
+                                                </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="infocell">Publishing, Saving, Sharing & Collaborating
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                                
+                                    <i class="material-icons custom">
+                                        stars</i>GitHub, GitHub Pages
+                                    <br>
+                                    <i class="material-icons custom">
+                                        stars</i>Cloud, G-Suite
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <div>
+                                        <p>You will definitey be using the 
+                                     <a tabindex="0"  role="button" type="button"
+                                                class="btn btn-info" data-placement="top" id="githubpopup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="GitHub"
+                                                html="true">
+                                                Github </a > platform to store files and folders for projects in a <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                                id="repositorypopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                                title="Repository" html="true">repository </a >, and to collaborate with your peers. In web development, <a tabindex="0"  role="button" type="button"
+                                                class="btn btn-info" data-placement="top" id="githubpagespopup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="Github Pages"
+                                                html="true">
+                                                Github Pages </a > is used to publish your content, to make your web pages go live and supply a 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                                id="urlpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                                title="URL" html="true">
+                                                URL </a > so that you can access the content via the web.
+                                            </p>
+                                          <p>
+                                            The <a tabindex="0"  role="button" type="button"
+                                            class="btn btn-info" data-placement="top" id="cloudpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Cloud"
+                                            html="true">
+                                            Cloud </a > supports platforms like Github, and <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                            id="gsuitepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="G-Suite" html="true">G-Suite </a > to give you the tools to collaborate with your peers. 
+                                          </p>
+
+
+
+                                    </div>
+                                </td>
+                            </tr>
+
+                         
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a tabindex="0"  role="button" type="button" class="btn btn-secondary" data-dismiss="modal">Close </a >
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                    <a tabindex="0"  role="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a >
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Why Is Digital Tooling Critical?</td>
+                            </tr>
+                            <td>
+                                <p>   <img src="images\digitools.webp" class="quoteimg"/></p>
+                             
+                                <span class="quote">The expectations of life depend upon diligence; the mechanic that would perfect his work must first sharpen his tools.</span>
+                                <i>Confucius</i>
+                   
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>
+Files and folders, editors and online repositories (like Github), web site publishing techniques - these are the foundations of success in your academic and professional career, and form the basis of the tooling you need in college and beyond.
+                                </p>
+                               
+                               
+                                <p>The digital tools you explored in this section will help you successfully coordinate and deliver academic and professional requirements. Keep learning, as new tools are created.</p>
+                            </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a tabindex="0"  role="button" type="button" class="btn btn-secondary" data-dismiss="modal">Close </a >
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!---- Links and popups -->
+    <div id="zwavecontent" style="display: none">
+        <div>
+
+            <p>
+                Z-Wave is a wireless protocol harnessing low-energy radio waves to help smart devices or appliances
+                communicate successfully with one another.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="lossycontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\jpg.png"/>
+            <p>
+                Lossy compression is a method of data compression in which the size of the file is reduced by eliminating data in the file. Image quality is sacrificed to decrease file size. 
+            </p>
+            <p>Standard .jpg files represent lossy compression.</p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="losslesscontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\png.png"/>
+            <p>
+                Lossless compression allows the original data to be fully reconstructed from the compressed data. Lossless compression methods are reversible.
+            </p>
+            <p>Standard .png files represent lossless compression.</p>
+
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="repositorycontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\repogit.png"/>
+            <p>
+                A repository is a storage space for project files. It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, images or any kind of a file in a repository.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="urlcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\url.jpg"/>
+            <p>
+                URL is an acronym for <i>Uniform Resource Locator</i> and is a reference (an address) to a resource on the Internet.
+            </p>
+          <p>
+            A URL has two main components:<br>
+
+            <i>Protocol identifier</i>: For the URL http://example.com, the protocol identifier is http.<br>
+            <i>Resource name</i>: For the URL http://example.com, the resource name is example.com.
+        
+          </p>>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="cloudcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\cloud.jpg"/>
+            <p>
+                Cloud computing is the on-demand availability of computer system resources, like data storage and computing power. Large clouds often have roles distributed across multiple locations,or data centers. The cloud is really a conglomeration of computing resources linked together by the internet - no actual cloud, but physical computing resources all over the world, accessed via the internet to make it look like a single space.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="zipcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\zip.png"/>
+            <p>
+                Zipping files is packaging a set of files into a single file or archive that is called a zip file. Zip files are compressed, using a lossless compression algorithm so the files can be extracted and restored to original size and format.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="gsuitecontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\gsuite.png"/>
+            <p>
+                G-Suite is a collection of cloud computing, productivity and collaboration tools, software and products developed and marketed by Google. It was first launched in 2006 as Google Apps.
+            </p>
+        
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="ethernetcontent" style="display: none">
+        <div>
+
+            <p>
+                IEEE (Institute of Electrical and Electronics Engineers) is a professional organizations that develops
+                standards in engineering
+                technology.
+            </p>
+            <p>Ethernet technology is a wired network technology defined by IEEE 802.3 standards.</p>
+            <p>
+                Standards for ethernet cabling define the speed of data transmission.
+            <ul>
+                <li>10BaseT Ethernet, 802.3i,operates at 10 Mbps</li>
+                <li>Fast Ethernet, IEEE 802.3u, runs at 100 Mbps</li>
+                <li>Gigabit Ethernet, IEEE 802.3z can reach speeds of 1,000 Mbps</li>
+                <li>10 Gigabit Ethernet, IEEE 802.3ae transfers data at a rate of 10,000 Mbps</li>
+                <li>40/100 Gigabit Ethernet, IEEE 802.3ba, 40 to 100 Gbps</li>
+            </ul>
+            </p>
+            Your device should have an ethernet port, for connecting ethernet cabling. If not, an adpater can be used.
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="maccontent" style="display: none">
+        <div>
+
+            <p>A MAC (Media Access Control) address, identifies devices
+                attached to a LAN. MAC addresses are assigned by the
+                manufacturer.</p>
+            <p>A MAC address, Wi-Fi address or physical address,
+                works with an IP address on a LAN. DHCP assigns an IP address to a device and links that to the devices
+                MAC address.</p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="niccontent" style="display: none">
+        <div>
+
+            <p>NICs, Network Access Controllers, are built into the curcuitry of computers, routers and most other
+                digital devices. They are also available as an add-on, like a USB device.
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="lancontent" style="display: none">
+        <div>
+
+            <p>Local Area Networks, LANs, connect computers typically within a home or office.
+
+            </p>
+            <p>LANs include DCEs like modems and/or routers, and cabling or wireless capacity, or both.</p>
+            <p>Microsoft Windows OS includes a tool for setting up a LAN called a HomeGroup, at home or in a small
+                business. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="wifihotspotcontent" style="display: none">
+        <div>
+
+            <p>A Wi-Fi Hotspot is a network with a wireless access point, typically operated by a small business, like a
+                restaurant. Signals are broadcast to about 150 feet.
+
+            </p>
+            <p>At the back end, data may be transmitted through DSL or fiber optics.</p>
+            <p>Speeds can vary, and depend on the number of people using the hotspot.</p>
+            <p>Wi-Fi Hotspots are not secure, data is transmitted without being encrypted - be careful when using these
+                hotspots to connect to the internet.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="mobilebroadbandcontent" style="display: none">
+        <div>
+
+            <p>Mobile Broadband is continually evolving, the most recent is 5G and Snapdragon-5G. It provides essential
+                service to thise without lad lines, or other devices.
+
+            </p>
+            <p>Mobile Broadband connects to a mobile network and sends data through 3G+ services.</p>
+            <p>
+                Mobile broadband can come in the form of
+            <ul>
+                <li>a dongle attachment that plugs into a USB port and connects
+                    the device to the internet</li>
+                <li>A personal Wi-Fi device or portable hotspot</li>
+                <li>In-car Wi-Fi</li>
+                <li>Data only SIM (Subscriber Identity Module) cards</li>
+            </ul>
+
+            </p>
+
+            <p>Speeds vary, upload speeds may reach 5 Mbps and download speeds. 12 Mbps.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="satellitecontent" style="display: none">
+        <div>
+
+            <p>Satellite Internet Service broadcasts data to a satellite in space, which is then broadcast again to a
+                land-based ISP.
+            </p>
+            <p>
+            <ul>
+                <li>the customer's modem get the data from a computer, and converts to signals </li>
+                <li>the signals are comveyed to the customer's satellite dish</li>
+                <li>from the customer satellite dish, the signals are broadcast to a communications
+                    satellite</li>
+                <li>Signals are broadcast from the satellite to a land based ISP</li>
+                <li>the ISP delivers the data to the customer</li>
+            </ul>
+            </p>
+            Latency is an issue with Satellite Internet.
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="ftthcontent" style="display: none">
+        <div>
+
+            <p>Fiber To Your Home, FTTH, runs on Fiber Optic cabling and is only available in certain areas built to
+                integrate with fiber optic cabling.
+                Fiber optic cabling is high capacity and can support higher transmission speeds, in excess of 1,000
+                Mbps.
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="dslcontent" style="display: none">
+        <div>
+
+            <p>Digital Subscriber Line internet access technology operates at high speeds. A DSL modem converts signals
+                to high frequency data signals. Voice and data signals are transferred over telephone lines, and then
+                switched to either regular telephone lines, or the internet.
+            </p>
+            <p>Speeds vary from 768 Kbps to higher than 5 Mbps.</p>
+            <p>
+                There are variations,
+            <ul>
+                <li>ADSL (Asymmetric DSL) has faster download than upload speeds.</li>
+                <li>SDSL (Symmetric DSL) has the same upload and download speeds</li>
+                <li>HDSL (High Bt Rate DSL) supports faster speeds</li>
+                <li>VDSL ( Very High Bit Rate DSL) offers the highest speeds</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="isdncontent" style="display: none">
+        <div>
+
+            <p>Integrated Services Digital Network technology splits the phone line into a channel for voice and a
+                channel for data. The data channel uses packet switching. Data rates are typically around 128Kbps.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="catvcontent" style="display: none">
+        <div>
+
+            <p>CATV originally stood for Community Antenna TV. A satellite dish would catch TV signals and relay these
+                signals over a system of cables, to subscriber homes.
+            </p>
+            <p>The topology of the relay infrastructure suits a digital network, for internet data.</p>
+            <p>Now, when a company offers cable TV service and also internet service, a home network becomes part of a
+                neighborhood network linked by the company digital media,
+                land lines and wireless.
+            </p>
+            <p>The bandwidth is divided to accomodate uploads, downloads and TV signals.
+                <img class="popupimg" src="images\catv.png" />
+            </p>
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="githubpagescontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\githubpages.jpg"/>
+            <p>GitHub Pages is a web site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, and publishes a website. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="githubcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\git.png"
+            <p>
+                GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere that has internet access.
+            </p>
+      
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+
+    <div id="udpcontent" style="display: none">
+        <div>
+
+            <p>UDP (User Datagram Protocol) is an alternative to TCP.
+                UDP also is responsible for 'chunking' data into packets and
+                sending the
+                packets out on the lines of the internet.
+                UDP is faster than TCP, but UDP does not support any error checking!.
+            </p>
+
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="tcpcontent" style="display: none">
+        <div>
+
+            <p>TCP (Transmission Control Protocol) is responsible for 'chunking' data into packets and sending the
+                packets out on the lines of the internet.
+                If all the packets are received, they are assembled in order. Otherwise, TCP requests a retransmission
+                of any lost or corrupted packets in a process of error checking.
+            </p>
+
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="tcpcontent" style="display: none">
+        <div>
+
+            <p>A protocol called TCP is responsible for splitting data up into chunks called packets.
+
+                TCP send packets to the destination, perhaps using different routes. The
+                packets are reassembled at the destination, using a sequence number to keep them in the correct order.
+            </p>
+            <p>The packets belonging to the original data may travel along different routes to get to the destination.
+                When they arrive at the destination, they are reassembled in sequence with the sequence number.</p>
+            <p>The older alternative to packet switching is circuit switching - this involves a dedicated line. Think of
+                the old telephone network.</p>
+
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="packetcontent" style="display: none">
+        <div>
+
+            <p>Each packet contains
+            <ul>
+                <li>the address of the sender</li>
+                <li>the destination address</li>
+                <li>a sequence number</li>
+                <li>data</li>
+            </ul>
+            </p>
+            <p>The packets belonging to the original data may travel along different routes to get to the destination.
+                When they arrive at the destination, they are reassembled in sequence with the sequence number.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="filecontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\file.webp" />
+            <p>... a collection of data stored as a unit, identified by a filename and a file extension. Can be a document (like Word documents, RTF (Rich Text Format) documents, PDFs, Web pages), picture (JPEGs, GIFs, BMPs, and layered image files, such as Photoshop documents - PSDs, audio (MP3s, AACs, WAVs, AIFs) or video stream (MPEG, MOV, WMV, or DV), or other collection of data. </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="startopologycontent" style="display: none">
+        <div>
+            <img src="images\startopology.png" />
+            <p>Connects multiple nodes to a central node</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="editorcontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\editor.png" />
+            <p>... suports the creation and management of a digital file</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="foldercontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\folder.webp" />
+            <p>... is the virtual location for applications, documents, data or other sub-folders. Folders help in storing and organizing files and data in the computer. The term is most commonly used with graphical user interface operating systems - <i>directory</i> is an equivalent term.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="imageeditorcontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\gimp.webp" />
+            <p>... supports creation and modification of image data stored in an image file.</p>
+            <p>Examples include Gimp.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="packetswitchingcontent" style="display: none">
+        <div>
+
+            <p>
+                Packet switching technology breaks a larger chunk of data into smaller units called packets.
+                These packets are given a sequence number, and labeled with the sender address and the target address
+                before being sent out on the lines of the internet.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!----------------------------------------------------------------------------->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#hexchartbutton').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#hexchart').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#binnumbutton').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#binnum').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#zwavepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#zwavecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#lossypopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#lossycontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#losslesspopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#losslesscontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#zippopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#zipcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#zippopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#zipcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#repositorypopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#repositorycontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#urlpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#urlcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#cloudpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#cloudcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#gsuitepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#gsuitecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#nicpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#niccontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#macpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#maccontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#lanpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#lancontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#wifihotspotpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#wifihotspotcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#mobilebroadbandpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#mobilebroadbandcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#satellitepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#satellitecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#ftthpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#ftthcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#isdnpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#isdncontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#dslpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#dslcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#catvpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#catvcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ipv6popup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#ipv6content').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#githubpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#githubcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#githubpagespopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#githubpagescontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#udppopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#udpcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tcppopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#tcpcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#packetswitchingpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#packetswitchingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#packetpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#packetcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#filepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#filecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#editorpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#editorcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#folderpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#foldercontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#imageeditorpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#imageeditorcontent').html();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Internet</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid #373A36;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: #373A36;
+        }
+
+        .carouselh3 {
+            color: #373A36;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #373A36;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: #373A36;
+            border: 3px solid #373A36;
+        }
+
+        .oomph {
+            font-size: large;
+            font-weight: bold;
+            color: #373A36;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+
+        .tablequestion {
+            display: table;
+            border: 5px solid #373A36;
+            padding: 10px;
+            border-collapse: separate;
+            justify-content: left;
+            text-align: left;
+        }
+
+        table.question-table tbody td {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        table.question-table tbody th {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        .infocell {
+            background-color: powderblue;
+        }
+
+        .material-icons i {
+            margin-right: -10px;
+            padding-right: -20px;
+        }
+
+        i.custom {
+            font-size: 2em;
+            color: green;
+        }
+
+        .oomph {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .popupimg {
+            width: 90%;
+            height: auto;
+        }
+
+        .buttonOomph {
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="112styles.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <a tabindex="0"  role="button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">Internet</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Vocab Verifier">
+
+                    </a>
+                    <h5 class="layout-title pt-2">Net Talk</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
+                    </a>
+                    <h5 class="layout-title pt-2">#Internet, Jobs</h5>
+                </section>
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vocabModalLabel1">Internet Chatter</h5>
+                    <a tabindex="0"  role="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">What's the Internet, really?</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">
+                                        stars</i>Interconnected Networks<br>
+                                    <i class="material-icons custom">
+                                        stars</i>WWW<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Web Browser<br>
+                                    
+                                    <i class="material-icons custom">
+                                        stars</i>
+                                    Web server
+                                    <i class="material-icons custom">
+                                        stars</i>
+                                    Extensions, Add-ons
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    The term, internet, is short for interconnected networks. <em>Internet</em> has a hardware connotation, 
+                                    whereas 
+the World Wide Web, 
+                                    <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="WWWpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="WWW" html="true">WWW</a>, refers to the software, the intangible code and 
+                                        logic that makes the internet that massive source of connectedness.
+                                    <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="webbrowserpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Web Browser" html="true">Web Browser</a>s make it
+                                         possible to view the information on the web. These browsers render documents residing
+                                         on 
+                                   
+                                    <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="webserverpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Web Server" html="true">web servers</a>. 
+                                        Browsers can be customized to include special functionality, via
+
+                                       <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="addonpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="add-ons" html="true">add-ons</a>, and 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="extensionspopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Extensions" html="true">extensions</a>.
+
+
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="infocell" colspan="2">Is it all about HTML?</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">
+                                        stars</i>HTML<br>
+                                    <i class="material-icons custom">
+                                        stars</i>tags<br>
+                                    <i class="material-icons custom">
+                                        stars</i>HTML Anchor tag<br>
+                                    
+                                    <i class="material-icons custom">
+                                        stars</i>
+                                    HTML document
+                                 
+                                    <i class="material-icons custom">stars</i>
+                                    Web page
+                                    <i class="material-icons custom">stars</i>
+                                    Hyperlinks
+                                    <i class="material-icons custom">stars</i>
+                                    URL
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+
+                                    <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="htmlpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="HTML" html="true">HTML</a>, is a formatting language created by Sir Tim Berners-Lee.
+                                    It uses <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="tagspopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="tags" html="true">tags</a> as units in an 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="htmldocumentpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="HTML Document" html="true">HTML document</a>, which is rendered by the browser into a 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="webpagepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Web Page" html="true">web page</a>.
+                                   
+                                    <p><a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="hyperlinkspopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Hyperlinks" html="true">Hyperlinks</a> allow web pages to link together, 
+                                        or to a different 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="urlpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="URL" html="true">URL</a>.A special tag called a 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                        id="anchortagpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Anchor Tag" html="true">anchor tag</a> supports this.
+                                       
+
+
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="infocell" colspan="2">Net Neutrality?</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    
+                                    Net neutrality is the idea that internet service providers like Comcast should treat all content flowing through their cables and cell towers equally. ISPs shouldn't be able to slide some data into <em>fast lanes</em>. 
+                                       
+
+
+                                    </p>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="infocell" colspan="2">Cloud Computing?</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    Delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (<em>the cloud</em>) to offer faster innovation, flexible resources, and economies of scale. 
+                                    </p>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="2" class="infocell">Protocols make the internet make sense
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        
+                                    <i class="material-icons custom">stars</i>
+                                    HTTP<br>
+                                   
+                                    <i class="material-icons custom">stars</i>
+                                    IP (Internet Protocol), IPV4, IPV6<br>
+                                    <i class="material-icons custom">stars</i>
+                                   
+                                    TCP (Transmission Control Protocol), UDP<br>
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <div>
+                                      
+                                            <p><a tabindex="0"  role="button" type="button"
+                                                class="btn btn-info" data-placement="top" id="httppopup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" 
+                                                title="HTTP"
+                                                html="true">HTTP</a>transmits hypermedia documents, web pages.
+                                       
+                                        <p>The internet works because of protocols. The keys? A strategy for identify devices attached to the internet, and a way to send information.
+                                            <em>IP</em>, Internet Protocol, defines 2 types of internet address, <a tabindex="0"  role="button" type="button"
+                                                class="btn btn-info" data-placement="top" id="ipv4popup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="IPV4"
+                                                html="true">
+                                                IPV4</a> and <a tabindex="0"  role="button" type="button"
+                                                class="btn btn-info" data-placement="top" id="ipv6popup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="IPV6"
+                                                html="true">
+                                                IPV6</a> </p>
+                                        <p> <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                                id="tcppopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                                title="TCP" html="true">
+                                            
+                                                    TCP/IP</a>
+                                            is one of the core
+                                            internet protocols. <a tabindex="0"  role="button" type="button" data-placement="top"
+                                                class="btn btn-info" id="udppopup" data-bs-toggle="popover"
+                                                data-bs-trigger="hover focus" title="UDP" html="true">
+                                                UDP</a> is an alternative to TCP, with less checks.</p>
+                                        
+                                     
+                                      
+
+
+
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Internet Organizations, evolution -->
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Internet Evolution, Internet Organizations
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    ARPANET, <br>
+                                    <i class="material-icons custom">stars</i>ICANN, <br>
+                                    <i class="material-icons custom">stars</i>Internet governance,<br>
+                                    <i class="material-icons custom">stars</i>Internet infrastructure, <br>
+                                    <i class="material-icons custom">stars</i>Internet backbone,<br>
+                                    <i class="material-icons custom">stars</i>Internet exchange points (IXPS),<br>
+                                
+
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    <p>The modern internet evolved from a DOD project called 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                                id="arpanetpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                                title="ARPAnet" html="true">ARPANet</a>. </p>
+                                    <p>Network providers work with internet organizations:
+<ul>
+    <li> <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+        id="icannpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+        title="ICANN" html="true">ICANN</a> is responsible
+        for addresses on the internet.</li>
+    <li>The <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+    id="w3cpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+    title="W3C" html="true">W3C</a> is a governing body.</li>
+    <li>The <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+        id="ianapopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+        title="IANA" html="true">IANA</a> controls IP address allocation.</li>
+</ul>
+                                  
+                                       
+                                    <p>The internet is a network of connected networks. These 'sub-networks' are
+                                        connected together in the
+                                        <span class=oomph>internet infrastructure</span>. 
+                                        Tier 1 networks are maintained
+                                        by ISPs like Verizon, AT&T. Tier 1 networks form the
+                                        <span class="oomph">internet backbone</span>, the main routes for data.
+                                    </p>
+                                    <p><span class="oomph">Internet eXchange Points(IXP)</span> are where ISPs exchange
+                                        data.</p>
+                                       
+                                </td>
+                            </tr>
+
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Careful on the internet
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    Copyright<br>
+                                    <i class="material-icons custom">stars</i>fair use<br>
+                                    <i class="material-icons custom">stars</i>open source<br>
+                                    private browsing mode<br>
+                                    <i class="material-icons custom">stars</i>
+                                    cookie, first-party cookie, third-party cookie
+                                    
+
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    <p>The internet s full of information, but be aware that <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info"
+                                            id="copyrightpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Copyight" html="true">
+                                         Copyright</a> provides legal protection to the creator.
+                                        The 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="fairusepolicypopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Fair Use Policy" html="true">
+                                            Fair Use Policy</a> provides allows for exceptions to copyright, make sure to check before using someone else's work.
+                                            If material is 
+                                        <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="opensourcepopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Open Source"
+                                            html="true">
+                                            open source
+                                        </a>, you can go ahead and use it.
+<p>
+                                        You create a digital footprint on the internet, and add to this with every click or site visited. <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="privatebrowsingmodepopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Private Browsing Mode" html="true">
+                                            Private Browsing Mode</a> is a way to avoid being tracked, and to ensure that your device doesn't accumulate 
+                                            <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="cookiespopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Cookies" html="true">cookies</a>, 
+                                            <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="firstpartycookiespopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="First-Party Cookie" html="true">first-party cookies</a>, or 
+                                            <a tabindex="0"  role="button" type="button" data-placement="top" class="btn btn-info" id="thirdpartycookiespopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Third-Party Cookies" html="true">third-party cookies</a>.
+
+                                  
+                                    </p>
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a tabindex="0"  role="button" type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                    <a tabindex="0"  role="button" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                              <tr>
+                                <td class="infocell" colspan="2">We All Use The Internet</td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <p>  <span class="quote">We are all now connected by the internet, like neurons in a giant brain.</span>
+                                    Stephen Hawking</p>
+                              <p> <span class="quote">The internet is becoming the town square for the global village of tomorrow.</span>
+                                Bill Gates</p>
+                                <p> <span class="quote">Information flow is what the internet is about. Information sharing is power. If you don't share your ideas, smart people can't do anything about them, and you'll remain anonymous.</span>
+                                    Vint Cerf</p>
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>
+                                    Since the mid-1990s, use of the internet and the  number of devices connected to the internet, have  grown exponentially.
+                                Through the internet, we communicate, learn, shop, do business, share views and alerts.</p>
+                                <p>
+                                <p>Network engineers and manufacturers of networking devices, need to consider the protocols in place (TCP/IP, FTP...) on the internet as new products are designed and existing products upgraded.
+                                </p>
+
+
+
+
+                                <p>The IOT (Internet of Things) has opened up the internet to devices that collect and forward digital data, and that are attached to the internet. For example, the DexCom device collects and stores blood sugar readings, via a sensor and a smart phone app. Industry and daily life are tied to the internet, understanding the basis is fundamental.
+                                </p>
+                                <br>
+                            </td>
+                            </tr>
+                         
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a tabindex="0"  role="button" type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!---- Links and popups -->
+    <div id="iotcontent" style="display: none">
+        <div>
+
+            <p>
+                IOT stands for Internet Of Things. It describes how small devices (things) are connected to the internet with Web 3.0 technology. Examples include the blood sugar monitoring DexCom G4,a camera inside a refridgerator.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="WWWcontent" style="display: none">
+        <div>
+
+            <p>
+               World Wide Web is the software that comprises the internet information content. The first browser was created by Sir Tim Berners-Lee, and named www.exe.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="webbrowsercontent" style="display: none">
+        <div>
+
+            <p>
+                This is software that allows a computer to retrieve and display web content. 
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="httpcontent" style="display: none">
+        <div>
+
+            <p>
+                HyperText Transfer Protocol, protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="w3ccontent" style="display: none">
+        <div>
+
+            <p>
+                The World Wide Web Consortium (W3C) is an international community that develops open standards to ensure the long-term growth of the Web.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="webservercontent" style="display: none">
+        <div>
+
+            <p>
+                A computer connected to the internet, storing HTML documents that it makes available to other computers over the internet.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="addoncontent" style="display: none">
+        <div>
+
+            <p>
+                Software, typically developed by a third party, that allow you to add features to Firefox to customize your browsing experience.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="extensionscontent" style="display: none">
+        <div>
+
+            <p>
+                Programs that can be installed into Firefox in order to change the browser's functionality. This includes adding new features or modifying existing behavior in Firefox to fix bugs, add extra functionality, or increase the browser's security.
+            </p>
+           
+            
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="ethernetcontent" style="display: none">
+        <div>
+
+            <p>
+                IEEE (Institute of Electrical and Electronics Engineers) is a professional organizations that develops
+                standards in engineering
+                technology.
+            </p>
+            <p>Ethernet technology is a wired network technology defined by IEEE 802.3 standards.</p>
+            <p>
+                Standards for ethernet cabling define the speed of data transmission.
+            <ul>
+                <li>10BaseT Ethernet, 802.3i,operates at 10 Mbps</li>
+                <li>Fast Ethernet, IEEE 802.3u, runs at 100 Mbps</li>
+                <li>Gigabit Ethernet, IEEE 802.3z can reach speeds of 1,000 Mbps</li>
+                <li>10 Gigabit Ethernet, IEEE 802.3ae transfers data at a rate of 10,000 Mbps</li>
+                <li>40/100 Gigabit Ethernet, IEEE 802.3ba, 40 to 100 Gbps</li>
+            </ul>
+            </p>
+            Your device should have an ethernet port, for connecting ethernet cabling. If not, an adpater can be used.
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="anchortagcontent" style="display: none">
+        <div>
+
+            <p>Piece of text which marks the beginning and/or the end of a hypertext link.
+Attributes of the anchor tag include
+                
+                HREF, which specifies the location to link to.</p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="urlcontent" style="display: none">
+        <div>
+
+            <p>Uniform Resource Locator - the address of a specific web page.
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="hyperlinkscontent" style="display: none">
+        <div>
+
+            <p>Word, phrase, or image that can be clicked to navigate to another part of the document, another document or a different site. Text hyperlinks are often blue and underlined. 
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="wifihotspotcontent" style="display: none">
+        <div>
+
+            <p>A Wi-Fi Hotspot is a network with a wireless access point, typically operated by a small business, like a
+                restaurant. Signals are broadcast to about 150 feet.
+
+            </p>
+            <p>At the back end, data may be transmitted through DSL or fiber optics.</p>
+            <p>Speeds can vary, and depend on the number of people using the hotspot.</p>
+            <p>Wi-Fi Hotspots are not secure, data is transmitted without being encrypted - be careful when using these
+                hotspots to connect to the internet.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="webpagecontent" style="display: none">
+        <div>
+
+            <p>A document that has been rendered by the browser into a format viewable over the internet.
+
+            </p>
+        
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="htmldocumentcontent" style="display: none">
+        <div>
+
+            <p>document saved with the extension . html or . htm that contains text and markup language tags needed to configure the web page. 
+            </p>
+        
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="tagscontent" style="display: none">
+        <div>
+
+            <p>HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content. 
+            </p>
+            <p>Most tags have two parts, a beginning tag and an ending tag.
+                <br>
+                Example, &lt;p&gt;paragraph text&lt;/p&gt;
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="htmlcontent" style="display: none">
+        <div>
+
+            <p>HyperText Markup Language, standard markup language for documents to be displayed in a web browser. Uses technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+        <!------------------------------------------------------------>
+        <div id="ianacontent" style="display: none">
+            <div>
+    
+                <p>Internet Assigned Numbers Authority, oversees IP address alloation, the Domain Name System (DNS) and protocols related to IP addressing.
+                </p>
+            </div>
+        </div>
+    <!------------------------------------------------------------>
+    <div id="arpanetcontent" style="display: none">
+        <div>
+
+            <p>Developed as an ARPA (Advanced Research Projects Agency) network in 1969, it formed the basis for the modern internet.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="icanncontent" style="display: none">
+        <div>
+
+            <p>Internet Corporation for Assigned Names and Numbers, not-for-profit global partnership dedicated to keeping the Internet secure, stable and interoperable. Develops policy on the Internet's functions.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="ipv6content" style="display: none">
+        <div>
+
+            <p>IP Version 6, IPV6, is an IP addressing schmeme that allows for 128 bits.
+            </p>
+            <p>128 bits allows for 2<sup>128</sup> IP addresses,
+                approximately 340
+                undecillion.</p>
+           
+            <p>We are still in transition to IP Version 6, IPV6.
+            </p>
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="ipv4content" style="display: none">
+        <div>
+
+            <p>IP Version 4, IPV4, is an IP addressing schmeme that allows for 32 bits.
+            </p>
+            <p>32 bits allows for 2<sup>32</sup> IP addresses,
+                approximately 4
+                billion.</p>
+      
+            <p>We ran out of IPV4 addresses many years ago, although we are still in transition to IP Version 6, IPV6.
+            </p>
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+
+    <div id="udpcontent" style="display: none">
+        <div>
+
+            <p>UDP (User Datagram Protocol) is an alternative to TCP.
+                UDP also is responsible for 'chunking' data into packets and
+                sending the
+                packets out on the lines of the internet.
+                UDP is faster than TCP, but UDP does not support any error checking!.
+            </p>
+
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="tcpcontent" style="display: none">
+        <div>
+
+            <p>TCP (Transmission Control Protocol) is responsible for 'chunking' data into packets and sending
+                packets out on the lines of the internet.
+                If all packets are received, they are assembled in order. Otherwise, TCP requests a retransmission
+                of any lost or corrupted packet.
+            </p>
+
+            <p></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="w3ccontent" style="display: none">
+        <div>
+
+            <p>World Wide Web Consortium, the governing body responsible for decisions about the future of the internet.
+            </p>
+           
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="packetcontent" style="display: none">
+        <div>
+
+            <p>Each packet contains
+            <ul>
+                <li>the address of the sender</li>
+                <li>the destination address</li>
+                <li>a sequence number</li>
+                <li>data</li>
+            </ul>
+            </p>
+            <p>The packets belonging to the original data may travel along different routes to get to the destination.
+                When they arrive at the destination, they are reassembled in sequence with the sequence number.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="copyrightcontent" style="display: none">
+        <div>
+            <p>Protects original works of authorship as soon as an author fixes the work in a tangible form of expression. In copyright law, works include paintings, photographs, illustrations, musical compositions, sound recordings, computer programs, books...</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="fairusepolicycontent" style="display: none">
+        <div>
+            <p>Provision in US copyright law that allows alimited amount of copyrighted material to be used for news, research or education.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="opensourcecontent" style="display: none">
+        <div>
+            <p>Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="privatebrowsingmodecontent" style="display: none">
+        <div>
+            <p>Privacy feature in some browsers. Browser creates a temporary session, isolated from the browser's main session and user data. Browsing history is not saved, local data associated with the session, like cookies, are cleared when the session is closed. </p>
+        </div>
+    </div>
+
+        <!------------------------------------------------------------>
+            <!------------------------------------------------------------>
+    <div id="cookiescontent" style="display: none">
+        <div>
+    
+            <p>File with information about an internet site visit, put onto a client computer when a site is visited. Although said to be harmless, these files can be used by malware, or to track internet browsing history in digital forensics.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="firstpartycookiescontent" style="display: none">
+        <div>
+    
+            <p>File with information about an internet site visit, put onto a client computer by the owner of the site.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="thirdpartycookiescontent" style="display: none">
+        <div>
+    
+            <p>File with information about an internet site visit, put onto a client computer by a company other than the owner of the site.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="packetswitchingcontent" style="display: none">
+        <div>
+
+            <p>
+                Packet switching technology breaks a larger chunk of data into smaller units called packets.
+                These packets are given a sequence number, and labeled with the sender address and the target address
+                before being sent out on the lines of the internet.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!----------------------------------------------------------------------------->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#iotpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#iotcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#WWWpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#WWWcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#webbrowserpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#webbrowsercontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#httppopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#httpcontent').html();
+                }
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+            $('#ianapopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#ianacontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#w3cpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#w3ccontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#addonpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#addoncontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#extensionspopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#extensionscontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#webserverpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#webservercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#htmlpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#htmlcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#tagspopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#tagscontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#htmldocumentpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#htmldocumentcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#webpagepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#webpagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#hyperlinkspopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#hyperlinkscontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#anchortagpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#anchortagcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#urlpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#urlcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#arpanetpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#arpanetcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#icannpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#icanncontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#w3cpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#w3ccontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#copyrightpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#copyrightcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fairusepolicypopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#fairusepolicycontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#opensourcepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#opensourcecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ipv6popup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#ipv6content').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ipv4popup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#ipv4content').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#udppopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#udpcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tcppopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#tcpcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#packetswitchingpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#packetswitchingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#packetpopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#packetcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#privatebrowsingmodepopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#privatebrowsingmodecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#cookiespopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#cookiescontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#firstpartycookiespopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#firstpartycookiescontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#thirdpartycookiespopup').popover({
+                html:true, trigger:'focus',
+                content: function () {
+                    return $('#thirdpartycookiescontent').html();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
