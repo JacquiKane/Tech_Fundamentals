@@ -1,0 +1,228 @@
+.imgUnit {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 5px solid navy;
+    box-shadow: 5px 10px #888888;
+}
+.visibilitymatters {
+    width: 75px;
+    height: auto;
+}
+
+.visibilityreallymatters {
+    width: 500px;
+    height: auto;
+}
+
+.imageannotate {
+    width: 300px;
+    height: auto;
+}
+
+.imageannotateplus {
+    width: 400px;
+    height: auto;
+}
+.infoimg {
+    width: 50px;
+    height:50px;
+}
+.infoplusimg {
+    width: 100px;
+    height:100px;
+}
+
+.infoplusplusimg{
+    width: 80%;
+    height:auto;  
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+.quoteimg {
+    width:100px;
+    height:100px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.quote {
+    font-family: cursive;
+
+}
+
+.quote::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
+.carouselback {
+    height: 600px;
+    background-image: url("notepaper.png");
+}
+
+.carouseldef {
+    width: 90%;
+    padding-left: 10%;
+    text-align: left;
+    justify-content: left;
+    color: darkblue;
+}
+
+.carouselh3 {
+    color: darkblue;
+}
+
+.tablecarousel {
+    padding-left: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: navy;
+}
+
+.tablecarouseldetail {
+    width: 70%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    color: navy;
+}
+
+.tablecarouseldetail td {
+    padding: 5px;
+}
+
+.tablecarouselborders {
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid seashell;
+    border-left: 3px solid seashell;
+    border-collapse: collapse;
+}
+
+.tablecarouseltd {
+    padding: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: navy;
+    border: 3px solid seashell;
+}
+
+.tablecarouseltd_detail {
+    padding: 5px;
+    text-align: left;
+    color: navy;
+    border: 3px solid blue;
+}
+
+.oomph {
+    font-size: large;
+    font-weight: bold;
+    color: navy;
+}
+
+.parent {
+    width: 150px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: lightgreen;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.child {
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: limegreen;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.grandchild {
+    width: 300px;
+    height: 30px;
+    margin-left: 50px;
+    background-color: darkgreen;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: larger;
+}
+
+.bigarrow {
+    margin-left: 100px;
+    font-size: 2em;
+    text-align: left;
+}
+
+.codePara {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+.tablequestion {
+    display: table;
+    border: 5px solid blue;
+    padding: 10px;
+    border-collapse: separate;
+    justify-content: left;
+    text-align: left;
+}
+
+table.question-table tbody td {
+    border: solid thin;
+    padding-left: 3px;
+}
+
+table.question-table tbody th {
+    border: solid thin;
+    padding-left: 3px;
+}
+
+.infocell {
+    background-color: powderblue;
+}
+
+.material-icons i {
+    margin-right: -10px;
+    padding-right: -20px;
+}
+
+i.custom {
+    font-size: 2em;
+    color: green;
+}
+
+.oomph {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.popupimg {
+    width: 90%;
+    height: auto;
+}
+
+.buttonOomph {
+    height: auto;
+}
