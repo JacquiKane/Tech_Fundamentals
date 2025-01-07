@@ -1,0 +1,2076 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Programming, APIs</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid navy;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: darkblue;
+        }
+
+        .carouselh3 {
+            color: darkblue;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: navy;
+            border: 3px solid blue;
+        }
+
+        .oomph {
+            font-size: large;
+            font-weight: bold;
+            color: navy;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+
+        .tablequestion {
+            display: table;
+            border: 5px solid blue;
+            padding: 10px;
+            border-collapse: separate;
+            justify-content: left;
+            text-align: left;
+        }
+
+        table.question-table tbody td {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        table.question-table tbody th {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        .infocell {
+            background-color: powderblue;
+        }
+
+        .material-icons i {
+            margin-right: -10px;
+            padding-right: -20px;
+        }
+
+        i.custom {
+            font-size: 2em;
+            color: green;
+        }
+
+        .oomph {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .popupimg {
+            width: 90%;
+            height: auto;
+        }
+
+        .buttonOomph {
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="112styles.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                 <a tabindex="0"  type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </a>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">APIs, Software Development</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="API">
+
+                    </a>
+                    <h5 class="layout-title pt-2"><em>API</em> Words</h5>
+                </section>
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
+                    </a>
+                    <h5 class="layout-title pt-2">#APIs, Jobs</h5>
+                </section>
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vocabModalLabel1">Code Words</h5>
+                     <a tabindex="0"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Discussing Applications Programming Interface
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">
+                                        stars</i>package<br>
+                                        <i class="material-icons custom">stars</i>module<br>
+                                        <i class="material-icons custom">stars</i>library<br>
+                                    <i class="material-icons custom">stars</i>
+                                    User Interface Design<br>
+                                    <i class="material-icons custom">stars</i>
+                                    UX/UI<br>
+
+                                    <i class="material-icons custom">stars</i>
+                                    import
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    function
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    class
+                                    <br>
+                             
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    
+                                    <p>
+                                        <a tabindex="0"  role="button" data-placement="left" class="btn btn-info"
+                                            id="apipopup" data-bs-toggle="popover"
+                                            data-bs-trigger="focus" title="API" html="true">APIs</a> are available so that developers don't have to reinvent the wheel.</p>
+                                            <p>
+                                        Typically, use of an API involves specifying an  <a tabindex="0"  type="button" data-placement="left" class="btn btn-info"
+                                            id="importpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Keyword" html="true">
+                                            import </a> of the code in the API, like <i>import tkinter</i>. This brings the selected code into your application, only when it is required. 
+
+                                    </p>
+                                    <p>Watch for other terms used to describe an API- you might see  <a tabindex="0"  type="button" class="btn btn-info" id="packagepopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Package"
+                                        html="true">package </a>,  <a tabindex="0"  type="button" class="btn btn-info" id="modulepopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Module"
+                                        html="true">module </a> or even  <a tabindex="0"  type="button" class="btn btn-info" id="librarypopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Syntax"
+                                        html="true">library </a> - all of these terms describe a set of code that saves you time and development effort, even though the words used are not <i>exactly</i> the same as <I>API</I>.</p>
+                                        <p>The code in an API can take the form of  <a tabindex="0"  type="button" class="btn btn-info" id="functionpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Function"
+                                            html="true">functions </a> , or given an  <a tabindex="0"  type="button" class="btn btn-info" id="ooppopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="OOP"
+                                            html="true">OOP </a> framework,  <a tabindex="0"  type="button" class="btn btn-info" id="classpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Class"
+                                            html="true">classes </a>.</p>
+                                    <p>
+                                        Syntax and semantics are important in the context of an API. The  <a tabindex="0"  type="button" class="btn btn-info" id="syntaxpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Syntax"
+                                            html="true">syntax </a> of the language specifies how it should be used,
+                                        while the
+                                         <a tabindex="0"  type="button" data-placement="top" class="btn btn-info"
+                                            id="semanticspopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Semantics" html="true">
+                                            semantics </a> deals with the logic behind program statements using API content.
+
+                                    </p>
+                                    <p>Today, many APIs support user interfaces.  
+                                       
+                                         <a tabindex="0"  type="button" data-placement="top" class="btn btn-info"
+                                            id="guipopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="GUI" html="true">
+                                            GUI </a> Application designers are concerned with the area of  <a tabindex="0"  type="button" data-placement="left" class="btn btn-info"
+                                        id="uxuipopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="UX/UI" html="true">
+                                        UX/UI </a>, there are so many applications that have been designed for the most effective user experience. You will see that <a tabindex="0"  type="button" data-placement="top" class="btn btn-info"
+                                        id="eventpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="GUI" html="true">
+                                        events </a>, like a mouse move event, or the click of a button (click event) are used extensively in any API that supports the user interface.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                     <a tabindex="0"  type="button" class="btn btn-secondary" data-dismiss="modal">Close </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                     <a tabindex="0"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Computing Jobs Use APIs
+                                </td>
+                            </tr>
+                            <td>
+                                <span class="quote">If the Web can be evolved to include the missings APIs and have better performance, developers won't need to go beyond the Web.</span><br>Brendan Eich, Creator of JavaScript</span>
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>Software developers typically use APIs, and many more develop the APIs for industry to use. APIs exist for currency, block-chain technology, travel, love(!) and much more.
+                                </p>
+                                <p>For example, Amazon Web Services (AWS) is used extensively today to build cloud applications. AWS certifications validate a developer or a business as a certified enity skilled in developing AWS web applications. This certification enhances a professional resume and portfolio.</p>
+                               
+                                <p>Use of an API means that the developer does not need to reinvent the wheel - saving development and testing resources.</p>
+                            </td>
+                            </tr>
+
+                       </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                     <a tabindex="0"  type="button" class="btn btn-secondary" data-dismiss="modal">Close </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!---- Links and popups -->
+
+
+    <div id="eventcontent" style="display: none">
+        <div>
+            <p>
+In modern programming languages and APIs that support a user interface and other, events are an important part of processing user interaction and timing the seqence of code.</p>
+<p>Example, when a user clicks a button or another part of the interface, a click event triggers a set of code, termed a <i>click handler</i>. </p>
+        </div>
+    </div>
+
+    <div id="guicontent" style="display: none">
+        <div>
+            <p>
+A GUI, or Graphical User Interface, is form of interaction that involves graphical elements like windows, and interaction established by the user interface. In the early days of the computer industry, interfaces were text based.
+            </p>
+            <p>The intent of a GUI is to make the user experience better.</p>
+        </div>
+    </div>
+
+    <div id="uxuicontent" style="display: none">
+        <div>
+            <p>
+<i>UX</i> stands for <em>U</em>ser E<em>X</em>perience, and <i>UI</i> stands for <em>U</em>ser <em>I</em>nterface.</p>
+<p>User experience deals with the user's interaction with an application, and measures how that user evaluates the process of using the application. A user interface is the panel of interaction between the user and the application.
+
+    In relation to websites and apps, UI design considers the look, feel, and interactivity of the product, whereas UX design is all about user experience in using the app - was it efficient, clear, easy to work with?</p>
+        </div>
+    </div>
+
+    <div id="importcontent" style="display: none">
+        <div>
+            <p>
+The word, <i>import</i>, means bringing something in from the outside. In software development, <i>importing </i> a block of code or data results in bringing that code or data into an application, either as code or as some other resource.
+            </p>
+            <p>The imported content is then available for use in the program code.</p>
+        </div>
+    </div>
+
+
+    <div id="packagecontent" style="display: none">
+        <div>
+
+            <p>
+
+A software package typically represents one or more code modules that work together. Think of Microsoft Office, which includes individual applications such as Word, Excel, Access and PowerPoint. The term <i>package</i> can also be loosely used to describe a set of code that can be reused, as in an API or a code library.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="modulecontent" style="display: none">
+        <div>
+
+            <p>
+
+                In software development, bigger coding projects are often split into separate modules. This modularisation is the standard technique for dealing with large and complex systems. The <i>modules</i> partition the system design or code. 
+            </p>
+            <p>Modules are not stand alone in this context, but the term module is often used loosely in reference to an API.</p>
+        </div>
+    </div>
+
+    <div id="librarycontent" style="display: none">
+        <div>
+
+            <p>
+
+                In software development, a set of data and program code is often separated out from the main project into one unit, to be accessed and shared by all developers working on the project.</p>
+                <p>In this context, and given the nature of an API containing reusable code, the term <i>library</i> is used to refer to an API.</p>
+        </div>
+    </div>
+
+    <div id="frontenddevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in visual user interfaces, aesthetics and layouts.
+            </p>
+            <p>
+                Front-end development skills include the design of user interface (UI) and user experience (UX), CSS,
+                JavaScript, HTML, and a growing collection of UI frameworks.
+            </p>
+        </div>
+    </div>
+
+    <div id="backenddevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in the design, implementation, logic, performance and scalability of a piece
+                of software or system running on machines that are remote from the end-user.
+            </p>
+            <p>A back-end developer works with programming languages such as Java, C, C++, Ruby, Perl, Python, Scala,
+                Go, etc. Back-end developers often need to integrate with a vast array of services such as databases and
+                data storage systems.</p>
+        </div>
+    </div>
+
+    <div id="fullstackdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                This is a developer that does both front-end and back-end work. He or she has the skills required to
+                create a fully functional web application.
+            </p>
+        </div>
+    </div>
+
+    <div id="embeddedsystemsdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                work with hardware that isn’t commonly classified as computers. For example, microcontrollers, real-time
+                systems, electronic interfaces, set-top boxes, consumer devices, iOT devices, hardware drivers, and
+                serial data transmission fall into this category.
+            </p>
+            <p>
+                Embedded developers often work with languages such as C, C++, Assembly, Java or proprietary
+                technologies, frameworks, and toolkits.
+                character.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="devopsengineercontent" style="display: none">
+        <div>
+
+            <p>
+                Works with technologies required for development of systems to
+                build, deploy, integrate and administer back-end software
+                and distributed systems.
+            </p>
+            <p>
+                Technologies used by DevOps Engineers include Kubernetes, Docker.
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="testengineercontent" style="display: none">
+        <div>
+
+            <p>
+                A Software Development Engineer in Test (SDET) is responsible for
+                writing software to validate the quality of software systems. They create automated tests, tools and
+                systems to make sure that products and processes run as expected.
+
+                Technologies used by SDETs include Python, Ruby.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="datascientistcontent" style="display: none">
+        <div>
+
+            <p>
+                Writes software programs to analyze data sets. They are often in charge of statistical analysis, machine
+                learning, data visualization, and predictive modeling.
+
+                Languages used by data scientists often include SQL, R, and Python.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+
+
+    <div id="bigdatadevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Awrites software programs to store and retrieve vast amounts of data in systems such as data warehouses,
+                ETL (Extract Transform Load) systems, relational databases, data lakes management systems, etc.
+
+                A big data developer is often familiar with frameworks and systems for distributed storage and
+                processing of vast amounts of data such as MapReduce, Hadoop, and Spark. Languages used by Big Data
+                Developers include SQL, Java, Python, and R.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="securitydevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in creating systems, methods, and procedures to test the security of a software system and
+                exploit and fix security flaws. This type of developer often works as <em>white-hat</em> ethical hacker
+                and
+                attempts to penetrate systems to discover vulnerabilities.
+
+                Security developers most often write tools in scripting languages such as Python and Ruby and understand
+                in details the many patterns used to attack software systems.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="webdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specialize in creating websites. Either front-end
+                developers, back-end developers or full-stack developers.
+
+                Web-Development became a common way to enter software engineering.
+                It has a low entry-point, basic HTML and CSS knowledge. With only a
+                few months of experience, an entry-level web developer can start
+                producing code that ships to production
+                systems.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+
+    <div id="agilecontent" style="display: none">
+        <div>
+
+            <p>
+                Iterative approach to project management and software development.
+                Helps teams deliver value to
+                customers faster and more reliably.
+                Agile teams deliver work in small, measurable increments.
+                Requirements, plans, and results are
+                evaluated continuously to respond to change quickly.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="scrumcontent" style="display: none">
+        <div>
+
+            <p>
+                Name comes from rugby! Framework that supports teams working together. Describes a set of meetings,
+                tools, and roles that work in concert to help teams structure and manage their work.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="scrummastercontent" style="display: none">
+        <div>
+
+            <p>
+                Helps to facilitate scrum to the larger team by ensuring the scrum framework is followed.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="sprintcontent" style="display: none">
+        <div>
+
+            <p>
+                Short time period when a scrum team works to complete a set amount of work. Sprints are at the
+                very heart of scrum and agile methodologies, and getting sprints right helps
+                an agile team ship
+                better software with fewer headaches.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="programstatementcontent" style="display: none">
+        <div>
+
+            <p>
+                An instruction written in a programming language, like a conditional, an assignment, a loop.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="keywordcontent" style="display: none">
+        <div>
+
+            <p>
+                A special word that is defined and regcognized by the programming language to be a part of it's
+                instruction set. Keywords like <em>if</em> and <em>while</em> convey conditional logic and iteration in
+                a given programming language, like C#, Python, Java.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="syntaxcontent" style="display: none">
+        <div>
+
+            <p>
+                The structure and rules that define how the programming language is to be correctly used. For example,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            could not be written as,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x - x * 2;
+            </div>
+            as this would result in a syntax error because of the missing closing parenthese, and the use of the ==
+            equality operator instead of the =, assignment operator.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="semanticscontent" style="display: none">
+        <div>
+
+            <p>
+                The meaning of or intended impact of, or the logic behind
+                a set of program instructions. For example, if variable x should be set to double it's value if x is
+                greater than or equal to 10,
+            </p>
+            <p>
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            would reflect a semantic error because <em>></em> is being used instead of <em>>=</em>,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x >= 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="variablecontent" style="display: none">
+        <div>
+
+            <p>
+                Named location in computer memory.like <em>count</em>, below.
+            </p>
+            <p>
+                int count = 7;
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="constantcontent" style="display: none">
+        <div>
+
+            <p>
+                named locationin computer memory, cannot be reassigned after declaration. Typically in upper-case.
+            </p>
+            <p>
+                const MAX_ATTEMPTS = 3;
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="debuggingcontent" style="display: none">
+        <div>
+
+            <p>
+                Process of figuring out errors in code. Attributed to Admiral Grace Hopper in the 1940s, when moth found
+                between relays of computer system!
+            </p>
+
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="formalmethodscontent" style="display: none">
+        <div>
+
+            <p>
+                Formal methods are system design techniques that use specified scientific models to build
+                software and hardware systems.
+            </p>
+
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <div id="idecontent" style="display: none">
+        <div>
+
+            <p>
+                Integrated Development Environment, a framework on which to create, test and modify software projects.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="mvccontent" style="display: none">
+        <div>
+
+            <p>
+                MVC is a design pattern used to separate user-interface (view), data (model), and application logic
+                (controller). The big idea is <em>separation of concerns</em>.
+            </p>
+            <p>
+                Using the MVC pattern for websites, requests are routed to a Controller that is responsible for working
+                with the Model to perform actions and/or retrieve data. The Controller chooses the View to display and
+                provides it with the Model. The View renders the final page, based on the data in the Model.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="apicontent" style="display: none">
+        <div>
+       
+            <p>
+                Applications Programming Interface, a library of software that is reusable and can be imported into a
+                software project.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="sdkcontent" style="display: none">
+        <div>
+
+            <p>
+                Standard Development Kit, a set of software utilities that is provided to assist with developing
+                software. Example, the Java development Kit, JDK.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="programminglanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                A set of prescribed instructions that are translated to codes that the computer can use as directives to
+                do tasks.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="compilercontent" style="display: none">
+        <div>
+
+            <p>
+                Software that translates source code in a programming language, to language teh computer can understand
+                - and does so all at the one time,
+                including all instructions in the source code.</p>
+            <p>C is an example of a compiled language.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="interpretercontent" style="display: none">
+        <div>
+
+            <p>Software that translates source code into code the computer can understand, and does so statement per
+                statement in sequential fashion.</p>
+            <p>Python is an example of an interpreted language.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="executablecodecontent" style="display: none">
+        <div>
+
+            <p>This is software in a form that can be run on a computer. executable code maps directly to machine
+                language, which is a set of instructions that have been made accessible to the processor.
+            </p>
+            <p>Executable code is all set to run on the computer.</p>
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <div id="objectcodecontent" style="display: none">
+        <div>
+
+            <p>Object code is code that has been transformed from source code into code that is almost ready to run on a
+                computer. The only step remaining is a linkage one, the object code has to be linked with other sets of
+                object code to form a complete program.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="flowchartingcontent" style="display: none">
+        <div>
+            <p>A pictorial (using specific symbols) representation of an algorithm, the flow of a computer program.
+
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="structuredenglishcontent" style="display: none">
+        <div>
+
+            <p>The use of a natural language (like English) in structured way, to detail the succession of steps in a
+                computer program.
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="pseudocodecontent" style="display: none">
+        <div>
+
+            <p>The use of a natural language(like English) in a way that mirrors programing, to convey the steps of an
+                algorithm or program.
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="firstgenerationlanguagecontent" style="display: none">
+        <div>
+            <p>This category of language was used to program early computers as a sequence of instructions coming from
+                on/off switches.</p>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="secondgenerationlanguagecontent" style="display: none">
+        <div>
+            <p> A step further in the evolution of computer programming languages, this category reflects the
+                instruction set recognized by processors and microchips - assembler or assembly language.</p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="thirdgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                These languages shifted to being more human readable and user friendly than machine code of first
+                generation languages and assembler of second generation languages. Examples include C, Python, Java.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="fourthgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                These are languages specialized to specific operations, like accessing databases. An example
+                is SQL,
+                although some third generation languages (like Python) encompass fourth generation abilities.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="fifthgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                Used in the development of artificial intelligence.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="sourcecodecontent" style="display: none">
+        <div>
+
+            <p>
+                A series of program code instructions, written in a programming language and following the syntax of the
+                language and semantics of the requirements.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="programflowcontent" style="display: none">
+        <div>
+
+            <p>
+                The order in which instructions are executed in a computer program.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="proceduralparadigmcontent" style="display: none">
+        <div>
+
+            <p>
+                Design of program code that executes sequentially, one instruction after another as coded line by line.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="objectorientedparadigmcontent" style="display: none">
+        <div>
+
+            <p>
+                Design of a program around the use of objects that are created from templates called classes. Objects
+                amd classes have methods (what the object or class can do) and properties (features or characteristics).
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="sequencecontent" style="display: none">
+        <div>
+
+            <p>
+                The order in which program code instructions are processed.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="selectioncontent" style="display: none">
+        <div>
+
+            <p>
+                Decision making in program code, typically denoted by <em>if</em> followed by a condition that evaluates
+                to either true or false. Code is executed based on the value of the condition.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="iterationcontent" style="display: none">
+        <div>
+
+            <p>
+                Repetition of a sequence of program code instructions, with a looping process.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="functioncontent" style="display: none">
+        <div>
+
+            <p>
+                Series of lines of code, encapsulated within a block. Code is executed when function is called.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="methodcontent" style="display: none">
+        <div>
+
+            <p>
+                What an object or class can do. Series of lines of code, encapsulated within a block and tied to an
+                object or class. Code is executed when the method is called.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="attributecontent" style="display: none">
+        <div>
+
+            <p>
+                Also known as a property, an attribute is a feature or characteristic of an object. Example, the hair
+                colour of a person object.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="oopcontent" style="display: none">
+        <div>
+
+            <p>
+                Object Oriented Programming. A software development paradigm in which classes and objects are used as
+                the basis for a solution.
+
+            </p>
+            <p>Some languages support OOP, and allow procedural design to co-exist - like Java and Python.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="abstractioncontent" style="display: none">
+        <div>
+
+            <p>
+                The identification of the classes and their hierarchy, that forms the basis for the OOP solution.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="polymorphismcontent" style="display: none">
+        <div>
+
+            <p>
+                The ability of objects (in a hierarchy) to specialize and respond in different ways to the same request.
+                Example, all animal objects know how to greet, a human might say <em>hi</em>, but a cat would
+                <em>meow</em>, and a dog would <em>bark</em>.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="inheritancecontent" style="display: none">
+        <div>
+
+            <p>
+                The ability for a subclass to reuse properties and methods of it's superclass.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="encapsulationcontent" style="display: none">
+        <div>
+
+            <p>
+                A class and an object in OOP can subsume details of properties and methods, only allowing a public
+                interface and keeping hidden key pieces of private information. The other side of this is keeping
+                details hidden, so the user does not have to worry about the details - much like a pill contains complex
+                drug information but a consumer just has to belove that it cures an ailment.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="superclasscontent" style="display: none">
+        <div>
+
+            <p>
+                A class that provides another class with the ability to reuse attribtes and methods, so saving design,
+                coding and testing time.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+        <!------------------------------------------------------------>
+        <div id="classcontent" style="display: none">
+            <div>
+    
+                <p>
+                    A class is a software model for creating other software models, termed <i>objects</i>. Think of a class as an architectural blueprint for building a house, and the house as the object.
+                </p>
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="subclasscontent" style="display: none">
+        <div>
+
+            <p>
+                A class that has been derived from another class, and can reuse the properties and methods defined in
+                the superclass.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="umldiagramcontent" style="display: none">
+        <div>
+
+            <p>
+                Unified Modelling Language, an industry standard diagramming technque for respresenting class
+                hierarchies.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="assemblercontent" style="display: none">
+        <div>
+
+            <p>
+                Assembly language, a set of instructions recognized by a microchip and operating on low level data,
+                binary streams.
+                For example, given a bit stream 0011, ASL, Arithmetic Shift Left, would result in a transformation to
+                0110.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="javacontent" style="display: none">
+        <div>
+
+            <p>
+                The Java programming language is a 3GL, extensively used in the industry. Java supports both procedural
+                and OOP paradigms.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="classhierarchycontent" style="display: none">
+        <div>
+
+            <p>
+                A set of classes, designed and coded based on inheritance.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!----------------------------------------------------------------------------->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+<script>
+//     $('#apipopup').popover({
+//   trigger: 'focus'
+// })
+</script>
+
+    <script>
+        const closepop = (identifier) => {
+            console.log("lost as fuck");
+            console.log(identifier);
+            // $(identifier).hide();
+            let test = document.querySelector(identifier);
+            console.log(test);
+            // test.style.display = 'none';
+            // test.style.visibility = 'hidden';
+            // test.style.hide = true;
+            // $(identifier).hide();
+            $(identifier).trigger('focus')
+        }
+    </script>
+    
+<script>
+    $(document).ready(function () {
+        $('#eventpopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#eventcontent').html();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#guipopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#guicontent').html();
+            }
+        });
+    });
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $('#uxuipopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#uxuicontent').html();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#importpopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#importcontent').html();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#librarypopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#librarycontent').html();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#modulepopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#modulecontent').html();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('#packagepopup').popover({
+           html: true, trigger: 'focus',
+            content: function () {
+                return $('#packagecontent').html();
+            }
+        });
+    });
+</script>
+
+    <script>
+        $(document).ready(function () {
+            $('#hexchartbutton').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#hexchart').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#binnumbutton').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#binnum').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#frontenddeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#frontenddevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#backenddeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#backenddevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fullstackdeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#fullstackdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#embeddedsystemsdeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#embeddedsystemsdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#devopsengineerpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#devopsengineercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#testengineerpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#testengineercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#datascientistpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#datascientistcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#bigdatadeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#bigdatadevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#securitydeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#securitydevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#webdeveloperpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#webdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#agilepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#agilecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#scrumpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#scrumcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#scrummasterpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#scrummastercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sprintpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#sprintcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#programstatementpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#programstatementcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#keywordpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#keywordcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#syntaxpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#syntaxcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#semanticspopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#semanticscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#syntaxerrorpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#syntaxerrorcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#variablepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#variablecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#debuggingpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#debuggingcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#constantpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#constantcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#idepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#idecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#mvcpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#mvccontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#formalmethodspopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#formalmethodscontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#apipopup').popover({
+               html: true, 
+                trigger: 'focus',
+                content: function () {
+                    return $('#apicontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sdkpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#sdkcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#programminglanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#programminglanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#compilerpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#compilercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#interpreterpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#interpretercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#executablecodepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#executablecodecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#objectcodepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#objectcodecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#flowchartingpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#flowchartingcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#classpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#classcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#structuredenglishpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#structuredenglishcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#pseudocodepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#pseudocodecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#firstgenerationlanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#firstgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#secondgenerationlanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#secondgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#thirdgenerationlanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#thirdgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fourthgenerationlanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#fourthgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fifthgenerationlanguagepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#fifthgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sourcecodepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#sourcecodecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#programflowpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#programflowcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#proceduralparadigmpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#proceduralparadigmcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#objectorientedparadigmpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#objectorientedparadigmcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#sequencepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#sequencecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#selectionpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#selectioncontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#iterationpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#iterationcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#functionpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#functioncontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#methodpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#methodcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#methodextrapopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#methodcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ooppopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#oopcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#attributepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#attributecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#abstractionpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#abstractioncontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#advancefeefraudpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#advancefeefraudcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#polymorphismpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#polymorphismcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#inheritancepopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#inheritancecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#encapsulationpopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#encapsulationcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#classhierarchypopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#classhierarchycontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#superclasspopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#superclasscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#subclasspopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#subclasscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#umldiagrampopup').popover({
+               html: true, trigger: 'focus',
+                content: function () {
+                    return $('#umldiagramcontent').html();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
