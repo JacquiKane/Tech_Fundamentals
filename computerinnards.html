@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="112styles.css">
+    <title>CIT 11200, Computer Innards</title>
+    <style>
+       
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                 <a tabindex="0"  role="button"  type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </a>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">What's IN a Computer?</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Parts">
+
+                    </a>
+                    <h5 class="layout-title pt-2"><em>Parts</em></h5>
+                </section>
+
+
+
+                <section class="col-12 col-sm-6  col-md-4 col-lg-2 col-xl-2">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
+                    </a>
+                    <h5 class="layout-title pt-2">#Parts, Jobs</h5>
+                </section>
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vocabModalLabel1">Level Up With Parts & Terms</h5>
+                     <a tabindex="0"  role="button"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                        
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Architecture & Function
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">
+                                        stars</i>Von Neumann Architecture<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Input<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Output
+                                        <br>
+                                        <i class="material-icons custom">
+                                            stars</i>Processing
+                                            <br>
+                                            <i class="material-icons custom">
+                                                stars</i>Storage
+                                                <br>
+             
+                    
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                   <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                        id="vonneumannpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Von Neumann Architecture" html="true">Von Neumann Achitecture </a> describes how modern computers are structured.
+                                        <p>
+                                            The 4 basic tenets of 
+                                     <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                        id="inputpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Input" html="true">input </a>,  
+                                     <a tabindex="0"  role="button"  type="button" data-placement="top" class="btn btn-info"
+                                        id="outputpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Output" html="true">output </a>,
+                                      <a tabindex="0"  role="button"  type="button" data-placement="top" class="btn btn-info"
+                                        id="processingpopup" data-bs-toggle="popover"
+                                        data-bs-trigger="hover focus" title="Processing"
+                                        html="true">processing </a> and   <a tabindex="0"  role="button"  type="button" data-placement="top" class="btn btn-info"
+                                        id="storagepopup" data-bs-toggle="popover"
+                                        data-bs-trigger="hover focus" title="Storage"
+                                        html="true">storage </a> all make the computer the ultimate technical tool.
+                                    </p>
+                                  
+                                 
+
+
+                                    <p>Von Neumann Architecture was described in an incomplete 1945 document, <i>First Draft of a Report on the EDVAC</i>, and persists to this day.</p>
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Motherboard and Attached Components
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">
+                                        stars</i>
+                                Motherboard<br>
+                                <i class="material-icons custom">
+                                    stars</i>CPU<br>
+                                    <i class="material-icons custom">
+                                        stars</i>RAM<br>
+                                    <i class="material-icons custom">
+                                        stars</i>HDD/SDD<br>
+                                        <i class="material-icons custom">
+                                            stars</i>BIOS<br>
+                                            <i class="material-icons custom">
+                                                stars</i>PSU<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                        <p>The 
+                                             <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="motherboardpopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Motherboard"
+                                                    html="true">motherboard </a>
+                                               is the hub to which all the other micro-components are attached. These include 
+                                               <div style="position: relative; display: flex;">
+                                          <ul>
+                                            <li> <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                id="psupopup" data-bs-toggle="popover"
+                                                data-bs-trigger="hover focus" title="PSU" html="true">
+                                                PSU </a> 
+                                            </li>
+                                                <li> <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                    id="cpupopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="CPU" html="true">
+                                                    CPU </a> 
+                                                </li>
+                                                <li> <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                    id="hddssdpopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="HDD, SSD" html="true">
+                                                    HDD, SSD </a> 
+                                                </li>   
+                                                <li> <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                    id="rampopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="RAM" html="true">
+                                                    RAM </a> 
+                                                </li>  
+                                                <li> <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                    id="biospopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="BIOS" html="true">
+                                                    BIOS </a> 
+                                                </li>     
+                                                    </ul>
+                                                    <div style="position:relative; padding-left: 20px; top:5px; right:15px;width:300px;height:100px;">Component parts get hot -  <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="heatsinkpopup"
+                                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Heatsink"
+                                                        html="true">heatsinks </a> and   <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="fanpopup"
+                                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Fan"
+                                                        html="true">fans </a> are used to cool down the components inside the   <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="casepopup"
+                                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Case"
+                                                        html="true">case </a>, dissipating heat and blowing hot air out of the case.</div>
+                                                </div>
+                                                </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="infocell">Making Improvements
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                                
+                                    <i class="material-icons custom">
+                                        stars</i>Cards, Expansion Cards
+                                    <br>
+                              
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <div>
+                                        <p>Typically, a motherboard has audio and video functionality, but an avid gamer might want better quality sound and graphics. The functionality of a computer system can be improved by adding better and more specific performance with the addition of a
+                                      <a tabindex="0"  role="button"  type="button"
+                                                class="btn btn-info" data-placement="left" id="videocardpopup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="Graphics Card"
+                                                html="true">
+                                                Graphics card </a>,  <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                id="soundcardpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                                title="Sound Card" html="true">Sound card </a>, or even a  <a tabindex="0"  role="button"  type="button"
+                                                class="btn btn-info" data-placement="left" id="networkcardpopup"
+                                                data-bs-toggle="popover" data-bs-trigger="hover focus" title="Network Card"
+                                                html="true">
+                                                Network Card </a>.
+
+                                     
+                                          </p>
+                                          <p>The cards are typically installed in <i>expansion slots</i> on the motherboard, or externally, through a USB port.</p>
+
+
+
+                                    </div>
+                                </td>
+                                <tr>
+                                    <td colspan="2" class="infocell">Processor Specifics
+                                    </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                              
+                                <i class="material-icons custom">
+                                    stars</i>Clock Speed<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Threading<br>
+                                    <i class="material-icons custom">
+                                        stars</i>Cache Memory<br>
+                                        <i class="material-icons custom">
+                                            stars</i>Instruction Set<br>
+                                            <i class="material-icons custom">
+                                                stars</i>Multi-core Processors<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                        <p>The  
+                                             <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="clockspeedpopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Clock Speed"
+                                                    html="true">Clock Speed </a>
+                                               of a processor is an important measurement, but not the only one to take into consideration. 
+                                          The 
+                                                 <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info"
+                                                    id="processorcorepopup" data-bs-toggle="popover"
+                                                    data-bs-trigger="hover focus" title="Processor Core" html="true">
+                                                    processor core </a> typically supports
+                                                 <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="threadingpopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Threading"
+                                                    html="true">
+                                                    threading </a> and has reserves of   <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="cachememorypopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Cache Memory"
+                                                    html="true">cache memory </a>.
+                                                     <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="multicoreprocessorspopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Multi-core Processor"
+                                                    html="true">Multi-core processors </a>, like dual-core(2) and quad-core(4) have extended performance. The big bottleneck is output!
+                                                </p>
+                                                <p>Finally, the processor     <a tabindex="0"  role="button"  type="button" data-placement="left" class="btn btn-info" id="instructionsetpopup"
+                                                    data-bs-toggle="popover" data-bs-trigger="hover focus" title="Instruction Set"
+                                                    html="true">instruction set </a> can vary in length and specificity, thus impacting the overall performance.</p>
+                                </td>
+                            </tr>                        
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                     <a tabindex="0"  role="button"  type="button" class="btn btn-secondary" data-dismiss="modal">Close </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                     <a tabindex="0"  role="button"  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </a>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <tr>
+                                <td class="infocell" colspan="2">Why Should You Know What's In a Computer?</td>
+                            </tr>
+                            <td>
+            
+                             
+                               
+                                <p>   <img src="images\hardware.jpg" class="quoteimg"/></p>
+                                <span class="quote">People who are more than casually interested in computers should have some idea what the underlying hardware is.</span>
+                                <i>Donald Knuth</i>, Turing Award winner, Professor of Computer Science
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>
+You should know what is inside a computer. You will need to compare computers in order to decide which one is the best fit for you or your company.
+                                </p>
+                                <p>You should know the component parts in a computer system. Understanding a computer spec is important in deciding what the base line is for your computer system, home or work, and judging whether to repair or replace. 
+                               </p>
+                              
+                            </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                     <a tabindex="0"  role="button"  type="button" class="btn btn-secondary" data-dismiss="modal">Close </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!---- Links and popups -->
+    <div id="zwavecontent" style="display: none">
+        <div>
+
+            <p>
+                Z-Wave is a wireless protocol harnessing low-energy radio waves to help smart devices or appliances
+                communicate successfully with one another.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="lossycontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\jpg.png"/>
+            <p>
+                Lossy compression is a method of data compression in which the size of the file is reduced by eliminating data in the file. Image quality is sacrificed to decrease file size. 
+            </p>
+            <p>Standard .jpg files represent lossy compression.</p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="losslesscontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\png.png"/>
+            <p>
+                Lossless compression allows the original data to be fully reconstructed from the compressed data. Lossless compression methods are reversible.
+            </p>
+            <p>Standard .png files represent lossless compression.</p>
+
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="repositorycontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\repogit.png"/>
+            <p>
+                A repository is a storage space for project files. It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, images or any kind of a file in a repository.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="urlcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\url.jpg"/>
+            <p>
+                URL is an acronym for <i>Uniform Resource Locator</i> and is a reference (an address) to a resource on the Internet.
+            </p>
+          <p>
+            A URL has two main components:<br>
+
+            <i>Protocol identifier</i>: For the URL http://example.com, the protocol identifier is http.<br>
+            <i>Resource name</i>: For the URL http://example.com, the resource name is example.com.
+        
+          </p>>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="cloudcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\cloud.jpg"/>
+            <p>
+                Cloud computing is the on-demand availability of computer system resources, like data storage and computing power. Large clouds often have roles distributed across multiple locations,or data centers. The cloud is really a conglomeration of computing resources linked together by the internet - no actual cloud, but physical computing resources all over the world, accessed via the internet to make it look like a single space.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="zipcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\zip.png"/>
+            <p>
+                Zipping files is packaging a set of files into a single file or archive that is called a zip file. Zip files are compressed, using a lossless compression algorithm so the files can be extracted and restored to original size and format.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="gsuitecontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\gsuite.png"/>
+            <p>
+                G-Suite is a collection of cloud computing, productivity and collaboration tools, software and products developed and marketed by Google. It was first launched in 2006 as Google Apps.
+            </p>
+        
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="inputcontent" style="display: none">
+        <div>
+<p><img src="images\inputdevices.jpg" class="infoplusimg" style="width: 150px;"/></p>
+            <p>
+                This involves getting data and instructions into the computer, via special devices referred to as input devices.
+            </p>
+    
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="outputcontent" style="display: none">
+        <div>
+            <p><img src="images\outputdevices.png" class="infoplusimg" style="width: 150px;"/></p>
+            <p>
+                The results of a computation are delivered to the user, via special devices referred to as output devices.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="storagecontent" style="display: none">
+        <div>
+<p><img src="images\ramandssd.jpg" class="infoplusimg" style="width: 150px;"/></p>
+            <p>Primary storage is also known as RAM (Random Access Memory). This is the storage that is volatile, content disappears when power goes. Secondary storage is permanent storage, like on a disk.
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="motherboardcontent" style="display: none">
+        <div>
+<p><img src="images\motherboard.jpg" class="infoplusimg" style="width: 150px;"/></p>
+            <p>The motherboard is the main circuit in a computer system.
+
+            </p>
+            <p>Small wire like etchings, termed traces,convey data between the micro-components and parts of the board.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="cpucontent" style="display: none">
+        <div>
+
+            <p>
+                <img src="images\cpu.jpg" class="infoplusimg" style="width: 150px;"/>
+            </p>
+            <p>The CPU or Central Processing is the chip that is described as the brains of the computer.</p>
+            <p>Modern CPUs subsume functionality of an ALU (Arithmetic and Logic Unit), performing calculations.</p>
+           
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="hddssdcontent" style="display: none">
+        <div>
+
+            <p>                <img src="images\hdd.jpg" class="infoimg"/>An HDD, Hard Disk Drive, is a permanent storage device with spinning magnetic disks and a read/write head to encode and read the information on the disk.
+
+            </p>
+            <p>                <img src="images\ssd.jpg" class="infoimg"/>A SSD (Solid State Device) is a newer permanent storage device that uses flash memory, like a USB drive. This memory can be electrically erased and reprogrammed, and contents persist even in the absence of power.</p>
+         
+
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="ramcontent" style="display: none">
+        <div>
+        <p> <img src="images\ram.jpg" class="infoplusimg"/></p>
+            <p>RAM, Random Access Memory, is primary storage- the storage that is used in processing data or running a computer program. RAM is volatile, which means that the content of RAM is only persisted while there is a power source.
+            </p>
+          
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="bioscontent" style="display: none">
+        <div>
+<p><img src="images\bios.jpg" class="infoplusimg"/></p>
+            <p>Basic Input Output System, or BIOS is firmware (software that is pre-installed). A BIOS chip, is typically a core part of a motherboard and is used to perform hardware initialization during the booting process (when a computer is powered on). 
+            </p>
+
+        </div>
+    </div>
+        <!------------------------------------------------------------>
+        <div id="psucontent" style="display: none">
+            <div>
+                <img src="images\psu.jpg" class="infoplusimg"/>
+                <p>
+                   Delicate computer component parts need direct current(DC), but house supply is alternating current(AC).
+                </p>
+                      <p>The Power Supply Unit (PSU) regulates the power supply and converts it to DC.</p>
+           
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="videocardcontent" style="display: none">
+        <div>
+            <img src="images\videocard.jpg" class="infoplusimg"/>
+            <p>
+                A graphics card, or video card, has its own memory and resources so it can improve video playback quality, which is especially important with high definition video. Additionally, a graphics card is designed to process and compress video and helps a computer process a video faster.
+            </p>
+                  <p>If on-board graphics functionality fails, a graphics card can be installed to restore  processing capability.</p>
+       
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="soundcardcontent" style="display: none">
+        <div>
+<img src="images\soundcard.jpg" class="infoplusimg"/>
+            <p>
+                A sound card reduces CPU usage, freeing it up for other tasks. The sound card takes on the audio load of the computer system, resulting in better sound quality and better performance. 
+            </p>
+            <p>If on-board sound functionality fails, a sound card can be installed to restore audio processing capability.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="networkcardcontent" style="display: none">
+        <div>
+
+            <p>
+                A NetworkInterface Card (NIC) can add or replace wired <img src="images\wirednic.jpg" class="infoimg"/>or wireless <img src="images\wirelessnic.jpg" class="infoimg"/>capability and impact network connection functionality in a computer system.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="githubpagescontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\githubpages.jpg"/>
+            <p>GitHub Pages is a web site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, and publishes a website. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="githubcontent" style="display: none">
+        <div>
+<img class="infoimg" src="images\git.png"
+            <p>
+                GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere that has internet access.
+            </p>
+      
+        </div>
+    </div>
+        <!------------------------------------------------------------>
+        <div id="clockspeedcontent" style="display: none">
+            <div>
+    
+                <p>
+                    <img src="images\clockspeed.jpg" class="infoplusimg"/>
+                </p>
+    
+                <p>The clock speed of a processor is a measure of the number of instructions executed per second. Clock speed is measured in hertz, specifically today, in <i>Giga</i>Hertz (billions of instructions per second). </p>
+              
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="processorcorecontent" style="display: none">
+        <div>
+
+            <p>
+                <img src="images\processorcore.jpg" class="infoplusimg"/>
+            </p>
+
+            <p>A processor core is a unit that performs the processing. In the early days of computers, the core was in essence the processor. The evolution of the technology led to processors having multiple cores, to allow for tasks to be done <i>seemingly</i> at the same time. </p>
+          
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="threadingcontent" style="display: none">
+        <div>
+
+            <p>
+                <img src="images\threading.png" class="infoplusplusimg"/>
+            </p>
+
+            <p>Threads of execution describe the flow of execution for a particular task. </p>
+            <p>Sometimes, inside a processor core, one task is interrupted for a period of time, while another one executes. This looks like 2 tasks are running at the same time, but it is not the case. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="cachememorycontent" style="display: none">
+        <div>
+
+            <p>
+                <img src="images\multicoreprocessor.jpg" class="infoplusplusimg"/>
+            </p>
+
+            <p>Cache (from the French word for hidden) memory, is memory that typically resides inside the processor casing. This cache memory saves results, to improve the efficiency of execution.</p>
+            <p>There are different levels of cache memory, representing access speed and proximity to the CPU core(s).</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="instructionsetcontent" style="display: none">
+        <div>
+
+            <p>
+            </p>
+            <p>An instruction set is code that the processor can understand. ISA, Instruction Set Architecture, can be composed of instructions of varying numbers of bits. These instructions control the flow of control and execution inside the processor core. The wider (in bits) the instruction set, the more instructions. More instructions is typically best, because less compositions of instructions are necessary. </p>
+
+            <p>This is an example from ZIP. <img src="images\instructionset.png" class="infoplusimg"/></p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="multicoreprocessorscontent" style="display: none">
+        <div>
+
+            <p><img src="images\multicoreprocessor.jpg" class="infoplusimg"/>
+            </p>
+            <p>A multi-core processor is a single processor unit, containing two or more separate processing units - cores. Each core a separate entity, reading and executing the <i>Instruction Set</i> commands.
+                </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="vonneumanncontent" style="display: none">
+        <div>
+            <p><img class="infoplusimg" src="images\vonneumannarch.png" /></p>
+            <p>Von Neumann architecture is the architecture upon which nearly all digital computers have been based. Characteristics include 
+                <ul>
+                    <li>centralized control, housed in the central processing unit</li>
+                    <li>a separate storage area, primary memory, which can contain both instructions and data - instructions are executed by the CPU, and are brought into the CPU from primary memory</li>
+                    <li>a unit that performs operations on operands, the arithmetic and logic unit (ALU) </li>
+                </ul>  
+         
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="heatsinkcontent" style="display: none">
+        <div>
+            <img src="images\heatsink.jpg" />
+            <p>Heatsinks are composed ofa conductive metal alloy, typically with filigree-like fingers that channel heat away from the component part. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+       <!------------------------------------------------------------>
+       <div id="fancontent" style="display: none">
+        <div>
+            <img src="images\fan.jpg" />
+            <p>Fans have a single purpose - to get rid of heat around a component part by blowing it away. </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+           <!------------------------------------------------------------>
+           <div id="casecontent" style="display: none">
+            <div>
+                <img src="images\case.jpg" />
+                <p>The case anchors the motherboard and component parts, and protects these components. Sometimes, a computer case is modelled to resemble artefacts, like a Star Wars character - this practice is termed <i>modding</i>. </p>
+            </div>
+        </div>
+        <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="editorcontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\editor.png" />
+            <p>... supports the creation and management of a digital file</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="foldercontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\folder.webp" />
+            <p>... is the virtual location for applications, documents, data or other sub-folders. Folders help in storing and organizing files and data in the computer. The term is most commonly used with graphical user interface operating systems - <i>directory</i> is an equivalent term.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="imageeditorcontent" style="display: none">
+        <div>
+            <img class="infoimg" src="images\gimp.webp" />
+            <p>... supports creation and modification of image data stored in an image file.</p>
+            <p>Examples include Gimp.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="processingcontent" style="display: none">
+        <div>
+<p>           <img class="infoimg" src="images\compcalc.jpg" /></p>
+            <p>
+                The actions a processor performs when it receives data and/or a request to take action - for instance, performing arithmetic calculations.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    
+    <!----------------------------------------------------------------------------->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#hexchartbutton').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#hexchart').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#binnumbutton').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#binnum').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#storagepopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#storagecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#lossypopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#lossycontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#losslesspopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#losslesscontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#zippopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#zipcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#zippopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#zipcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#repositorypopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#repositorycontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#urlpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#urlcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#cloudpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#cloudcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#gsuitepopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#gsuitecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#vonneumannpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#vonneumanncontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#motherboardpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#motherboardcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#cpupopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#cpucontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#hddssdpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#hddssdcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#rampopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#ramcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#biospopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#bioscontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#networkcardpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#networkcardcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#soundcardpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#soundcardcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#videocardpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#videocardcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#clockspeedpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#clockspeedcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#threadingpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#threadingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#githubpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#githubcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#githubpagespopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#githubpagescontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#cachememorypopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#cachememorycontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#instructionsetpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#instructionsetcontent').html();
+                }
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $('#processorcorepopup').popover({
+                    html: true, trigger: 'focus',
+                    content: function () {
+                        return $('#processorcorecontent').html();
+                    }
+                });
+            });
+        </script>
+    <script>
+        $(document).ready(function () {
+            $('#multicoreprocessorspopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#multicoreprocessorscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#packetpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#packetcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#vonneumannpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#vonneumanncontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#outputpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#outputcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#inputpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#inputcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#processingpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#processingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#heatsinkpopup').popover({
+                html: true, trigger: 'focus',
+                content: function () {
+                    return $('#heatsinkcontent').html();
+                }
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $('#fanpopup').popover({
+                    html: true, trigger: 'focus',
+                    content: function () {
+                        return $('#fancontent').html();
+                    }
+                });
+            });
+        </script>
+            <script>
+                $(document).ready(function () {
+                    $('#casepopup').popover({
+                        html: true, trigger: 'focus',
+                        content: function () {
+                            return $('#casecontent').html();
+                        }
+                    });
+                });
+            </script>
+         </script>
+         <script>
+             $(document).ready(function () {
+                 $('#psupopup').popover({
+                     html: true, trigger: 'focus',
+                     content: function () {
+                         return $('#psucontent').html();
+                     }
+                 });
+             });
+         </script>       
+    
+
+</body>
+
+</html>
